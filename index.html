@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>My page</title>
-</head>
-<body>
-
-	<p>Hello, my name is Minh Pham<p>
-	<p><a href="https://github.com/socpite">Github <a><p>
+	<head>
+		<title>My page</title>
+	</head>
+		<body>
+			<p>Hello, my name is Minh Pham<p>
+			<p><a href="https://github.com/socpite">Github <a><p>
 			<p><a href="https://www.linkedin.com/in/minh-ph%E1%BA%A1m-c%C3%B4ng-ba16a5296/">Linkedin<a><p>
-	<p><a href="https://web2.qatar.cmu.edu/~mcpham/randy_pausch">Randy Pausch lecture report<a><p>
+			<p><a href="https://web2.qatar.cmu.edu/~mcpham/randy_pausch">Randy Pausch lecture report<a><p>
+			  <script type="module">
+				  import init from "./pkg/tetris.js";
+				  init().then(() => {
+					  console.log("WASM Loaded");
+				  });
+			  </script>
 
-</body>
+		</body>
 </html>
