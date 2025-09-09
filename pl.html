@@ -1,21 +1,86 @@
-<ol>
-<li>why did we move from punch cards to programming languages? what does that tell you about the purpose of programming languages?</li>
-</ol>
-<p>we moved away from punch cards because they were cumbersome: hard to read, easy to damage, and slow to work with. they also forced programmers to work at a very low level, with none of the abstractions we now rely on. programming languages were developed to let humans express algorithms in a more natural and structured way. their purpose is not just to tell the computer what to do, but also to help humans think about, organize, and manage complexity in software. features like abstraction, modularity, and error checking make programming languages tools for both communication with machines and collaboration among humans.</p>
-<ol start="2">
-<li>there are hundreds of different programming languages out there. why do you think we need so many?</li>
-</ol>
-<p>different languages are designed to solve different kinds of problems. for example, python emphasizes simplicity and readability, making it great for data analysis, scripting, and rapid prototyping. c provides low-level control and efficiency, which is essential for operating systems or embedded systems. some languages are built for safety (like rust), some for concurrency (like go), and others for domain-specific tasks (like sql for databases). having many languages means developers can choose the right tool for the job, rather than forcing one language to fit every scenario.</p>
-<ol start="3">
-<li>what are some drawbacks of a programming language you use? how would you like it to be different?</li>
-</ol>
-<ul>
-<li><p>python: while flexible, it can be too permissive. for example, accidentally overwriting a function name or relying on dynamic typing can introduce subtle bugs. python is also relatively slow due to limited compile-time optimization and its interpreted nature. many libraries address this by wrapping optimized c code, but i wish python had stronger built-in safeguards and more performance-focused features without sacrificing readability.</p>
-</li>
-<li><p>rust: rust prioritizes safety and performance but at the cost of complexity. its steep learning curve, with concepts like ownership, borrowing, and lifetimes, can make code harder to read for newcomers. if rust could simplify some syntax or provide more gradual “onboarding” features, it would be more approachable while still retaining its strengths.</p>
-</li>
-</ul>
-<ol start="4">
-<li>if you were going to create a new programming language, how would you start? what do you need to define?</li>
-</ol>
-<p>the first step would be defining the purpose of the language: what kinds of problems it should solve and who the intended users are. for example, is it meant for scientists, system developers, or web programmers? once the goal is clear, i would gather input from potential users to identify the features they value most. after that, i would define the language’s fundamentals: its syntax, type system, data structures, and control flow. finally, i would build a minimal compiler or interpreter to test the design in practice, refining it based on feedback and real-world use cases.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Languages Research - Minh Pham</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="research-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand"><a href="index.html">Minh Pham</a></div>
+            <ul class="nav-menu">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#research">Research</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="research-main">
+        <article class="research-article">
+            <header class="research-header">
+                <h1>Programming Languages: Evolution and Design</h1>
+                <div class="research-meta">
+                    <span class="research-date">2024</span>
+                    <span class="research-category">Programming Languages</span>
+                </div>
+            </header>
+
+            <div class="research-content">
+                <h2>1. Why did we move from punch cards to programming languages? What does that tell you about the purpose of programming languages?</h2>
+                
+                <p>We moved away from punch cards because they were cumbersome: hard to read, easy to damage, and slow to work with. They also forced programmers to work at a very low level, with none of the abstractions we now rely on. Programming languages were developed to let humans express algorithms in a more natural and structured way. Their purpose is not just to tell the computer what to do, but also to help humans think about, organize, and manage complexity in software. Features like abstraction, modularity, and error checking make programming languages tools for both communication with machines and collaboration among humans.</p>
+                
+                <h2>2. There are hundreds of different programming languages out there. Why do you think we need so many?</h2>
+                
+                <p>Different languages are designed to solve different kinds of problems. For example, Python emphasizes simplicity and readability, making it great for data analysis, scripting, and rapid prototyping. C provides low-level control and efficiency, which is essential for operating systems or embedded systems. Some languages are built for safety (like Rust), some for concurrency (like Go), and others for domain-specific tasks (like SQL for databases). Having many languages means developers can choose the right tool for the job, rather than forcing one language to fit every scenario.</p>
+                
+                <h2>3. What are some drawbacks of a programming language you use? How would you like it to be different?</h2>
+                
+                <h3>Python</h3>
+                <p>While flexible, it can be too permissive. For example, accidentally overwriting a function name or relying on dynamic typing can introduce subtle bugs. Python is also relatively slow due to limited compile-time optimization and its interpreted nature. Many libraries address this by wrapping optimized C code, but I wish Python had stronger built-in safeguards and more performance-focused features without sacrificing readability.</p>
+                
+                <h3>Rust</h3>
+                <p>Rust prioritizes safety and performance but at the cost of complexity. Its steep learning curve, with concepts like ownership, borrowing, and lifetimes, can make code harder to read for newcomers. If Rust could simplify some syntax or provide more gradual "onboarding" features, it would be more approachable while still retaining its strengths.</p>
+                
+                <h2>4. If you were going to create a new programming language, how would you start? What do you need to define?</h2>
+                
+                <p>The first step would be defining the purpose of the language: what kinds of problems it should solve and who the intended users are. For example, is it meant for scientists, system developers, or web programmers? Once the goal is clear, I would gather input from potential users to identify the features they value most. After that, I would define the language's fundamentals: its syntax, type system, data structures, and control flow. Finally, I would build a minimal compiler or interpreter to test the design in practice, refining it based on feedback and real-world use cases.</p>
+            </div>
+
+            <footer class="research-footer">
+                <a href="index.html#research" class="back-link">← Back to Research</a>
+            </footer>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Minh Pham. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navMenu = document.querySelector('.nav-menu');
+
+        mobileMenu.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

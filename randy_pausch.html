@@ -1,33 +1,103 @@
-<h1>Who is Randy Pausch</h1>
-<ul>
-<li>Carnegie Mellon University professor</li>
-<li>During the talk, he is battling pancreatic cancer</li>
-</ul>
-<h1>What was he known for</h1>
-<ul>
-<li>Creator of the Alice software project</li>
-<li>Human-computer interaction researcher</li>
-<li>Pioneer in virtual reality</li>
-<li>Gave the &quot;Last Lecture&quot; titled &quot;Really Achieving Your Childhood Dreams&quot;, published a book with the same name &quot;The Last Lecture&quot;</li>
-</ul>
-<h1>Things that I liked from his talk</h1>
-<ul>
-<li>Calculating what I am worth an hour to make tradeoffs like writing or buying a piece of software.</li>
-<li>Time &gt;&gt;&gt;&gt;&gt; Money</li>
-<li>Discard all tasks in to-do list that is not important even if its due soon</li>
-<li>Having a labeled+sorted file system for easy retrieval (now digital)</li>
-<li>Always have something to do next immediately to avoid downtime</li>
-<li>Learn to say no<ul>
-<li>&quot;I will only be your last fallback&quot;</li>
-</ul>
-</li>
-<li>Find dead times to do less important tasks</li>
-<li>Interuptions are very costly</li>
-<li>Journal what you do with your time to find waste<ul>
-<li>Use your time between class effectively, or even creating a &quot;fake class&quot; yourself.</li>
-</ul>
-</li>
-<li>Be efficient to have more time with family</li>
-<li>Make up fake earlier deadlines to avoid rush and stress</li>
-</ul>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Randy Pausch Lecture Report - Minh Pham</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="research-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand"><a href="index.html">Minh Pham</a></div>
+            <ul class="nav-menu">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#research">Research</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
 
+    <main class="research-main">
+        <article class="research-article">
+            <header class="research-header">
+                <h1>Randy Pausch: Time Management Lecture Insights</h1>
+                <div class="research-meta">
+                    <span class="research-date">2024</span>
+                    <span class="research-category">Productivity</span>
+                </div>
+            </header>
+
+            <div class="research-content">
+                <h2>Who is Randy Pausch</h2>
+                <ul>
+                    <li>Carnegie Mellon University professor</li>
+                    <li>During the talk, he is battling pancreatic cancer</li>
+                </ul>
+                
+                <h2>What was he known for</h2>
+                <ul>
+                    <li>Creator of the Alice software project</li>
+                    <li>Human-computer interaction researcher</li>
+                    <li>Pioneer in virtual reality</li>
+                    <li>Gave the "Last Lecture" titled "Really Achieving Your Childhood Dreams", published a book with the same name "The Last Lecture"</li>
+                </ul>
+                
+                <h2>Things that I liked from his talk</h2>
+                <ul>
+                    <li>Calculating what I am worth an hour to make tradeoffs like writing or buying a piece of software.</li>
+                    <li>Time &gt;&gt;&gt;&gt;&gt; Money</li>
+                    <li>Discard all tasks in to-do list that is not important even if its due soon</li>
+                    <li>Having a labeled+sorted file system for easy retrieval (now digital)</li>
+                    <li>Always have something to do next immediately to avoid downtime</li>
+                    <li>Learn to say no
+                        <ul>
+                            <li>"I will only be your last fallback"</li>
+                        </ul>
+                    </li>
+                    <li>Find dead times to do less important tasks</li>
+                    <li>Interruptions are very costly</li>
+                    <li>Journal what you do with your time to find waste
+                        <ul>
+                            <li>Use your time between class effectively, or even creating a "fake class" yourself.</li>
+                        </ul>
+                    </li>
+                    <li>Be efficient to have more time with family</li>
+                    <li>Make up fake earlier deadlines to avoid rush and stress</li>
+                </ul>
+            </div>
+
+            <footer class="research-footer">
+                <a href="index.html#research" class="back-link">← Back to Research</a>
+            </footer>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Minh Pham. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navMenu = document.querySelector('.nav-menu');
+
+        mobileMenu.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
