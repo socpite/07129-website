@@ -205,6 +205,28 @@ p {
     color: var(--primary-color);
 }
 
+.resume-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+    padding: 1rem 2rem;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    border-radius: var(--radius-lg);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.125rem;
+    transition: all var(--transition-base);
+    box-shadow: var(--shadow-md);
+}
+
+.resume-button:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-xl);
+    filter: brightness(1.1);
+}
+
 .icon {
     width: 20px;
     height: 20px;
