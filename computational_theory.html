@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computational Theory Research - Minh Pham</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="research-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand"><a href="index.html">Minh Pham</a></div>
+            <ul class="nav-menu">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#research">Research</a></li>
+                <li><a href="Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="research-main">
+        <article class="research-article">
+            <header class="research-header">
+                <h1>Fundamentals of Computational Theory</h1>
+                <div class="research-meta">
+                    <span class="research-date">2025</span>
+                    <span class="research-category">Computational Theory</span>
+                </div>
+            </header>
+
+            <div class="research-content">
+                <h2>What is the decision problem?</h2>
+                <p>The decision problem is a computational problem where there is a Yes/No answer for each input. For example, the problem "Is <em>x</em> a prime?" is a decision problem.</p>
+
+                <h2>What does it mean for a decision problem to be decidable?</h2>
+                <p>A decision problem is <strong>decidable</strong> if there exists an algorithm that can answer the problem in a finite amount of time for all possible inputs.</p>
+
+                <h2>What is the class P? What is the class NP?</h2>
+                <p><strong>Class P</strong> is the set of problems for which there exists a polynomial-time algorithm that solves the problem.<br>
+                <strong>Class NP</strong> is the set of problems for which a proposed solution can be verified in polynomial time, even if finding that solution may be hard. NP stands for “nondeterministic polynomial time.”</p>
+
+                <h2>What is the intuitive meaning of the “P versus NP” question?</h2>
+                <p>The question asks whether every problem whose solution can be verified in polynomial time can also be <em>solved</em> in polynomial time. In other words, is <code>P = NP</code>?</p>
+
+                <h2>If you resolve the P versus NP question, how much richer will you be?</h2>
+                <p>At least one million dollars&mdash;the Clay Mathematics Institute offers a Millennium Prize for a correct proof. Even more money could follow if the solution leads to significant technological breakthroughs.</p>
+
+                <h2>References</h2>
+                <ul>
+                    <li><a href="https://en.wikipedia.org/wiki/P_versus_NP_problem#Claimed_solutions">Wikipedia: P versus NP problem</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Decision_problem">Wikipedia: Decision problem</a></li>
+                    <li><a href="https://www.geeksforgeeks.org/theory-of-computation/decidable-and-undecidable-problems-in-theory-of-computation/">GeeksforGeeks: Decidable and undecidable problems</a></li>
+                </ul>
+
+                <h2>Read more</h2>
+                <ul>
+                    <li><a href="https://wscor.win.tue.nl/woeginger/P-versus-NP.htm">Gerhard J. Woeginger’s P vs NP page</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Travelling_salesman_problem">Wikipedia: Travelling salesman problem</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Time_complexity">Wikipedia: Time complexity</a></li>
+                </ul>
+            </div>
+
+            <footer class="research-footer">
+                <a href="index.html#research" class="back-link">← Back to Research</a>
+            </footer>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Minh Pham. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navMenu = document.querySelector('.nav-menu');
+        mobileMenu.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
