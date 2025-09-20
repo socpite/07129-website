@@ -260,6 +260,20 @@ p {
     animation: scroll 2s infinite;
 }
 
+/* Calendar */
+.calendar-embed {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.calendar-embed iframe {
+    width: 100%;
+    border: none;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+}
+
 /* Sections */
 .section {
     padding: 5rem 0;
