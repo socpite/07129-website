@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Computing - Minh Pham</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="research-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand"><a href="index.html">Minh Pham</a></div>
+            <ul class="nav-menu">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#research">Research</a></li>
+                <li><a href="Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="research-main">
+        <article class="research-article">
+            <header class="research-header">
+                <h1>Cloud Computing</h1>
+                <div class="research-meta">
+                    <span class="research-date">2025</span>
+                    <span class="research-category">Cloud Computing</span>
+                </div>
+            </header>
+
+            <div class="research-content">
+                <h2>What is cloud computing?</h2>
+                <p>Cloud computing delivers on-demand computing resources (servers, storage, databases, networking, software) over the internet, enabling scalable and flexible IT services without local infrastructure.</p>
+
+                <h2>Is cloud computing a new technology per se? In other words, what are the unique technology features of cloud computing, if any?</h2>
+                <p>Cloud computing builds on virtualization, distributed systems, and automation. Its unique features include resource pooling, rapid elasticity, on-demand self-service, and measured service.</p>
+
+                <h2>What are the three major cloud service models?</h2>
+                <ul>
+                    <li><strong>Infrastructure as a Service (IaaS)</strong>: Provides virtualized computing resources over the internet.</li>
+                    <li><strong>Platform as a Service (PaaS)</strong>: Offers hardware and software tools for application development without managing underlying infrastructure.</li>
+                    <li><strong>Software as a Service (SaaS)</strong>: Delivers software applications over the internet on a subscription basis.</li>
+                </ul>
+
+                <h2>Name at least 3 real-world domains where the application of cloud computing was (or can be) very enabling and effective.</h2>
+                <ul>
+                    <li>Healthcare (e.g., scalable data analytics and telemedicine platforms)</li>
+                    <li>Finance (e.g., high‑performance trading platforms and regulatory compliance solutions)</li>
+                    <li>Education (e.g., virtual learning environments and resource sharing)</li>
+                    <li>Entertainment (e.g., streaming services and online gaming backends)</li>
+                    <li>Retail (e.g., e‑commerce platforms and inventory management)</li>
+                </ul>
+
+                <h2>What is the economic/business model of cloud computing?</h2>
+                <p>The cloud business model is pay-as-you-go (utility pricing), where customers are billed based on resource usage (compute time, storage, bandwidth), reducing capital expenditure and aligning costs with demand.</p>
+
+                <h2>Read more</h2>
+                <ul>
+                    <li><a href="https://aws.amazon.com/what-is-cloud-computing/">AWS: What is Cloud Computing?</a></li>
+                    <li><a href="https://azure.microsoft.com/en-us/overview/what-is-cloud-computing/">Microsoft Azure: What is Cloud Computing?</a></li>
+                    <li><a href="https://cloud.google.com/learn/what-is-cloud-computing">Google Cloud: What is Cloud Computing?</a></li>
+                </ul>
+
+                <h2>References</h2>
+                <ul>
+                    <li><a href="https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-145.pdf">NIST SP 800-145: The NIST Definition of Cloud Computing</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Cloud_computing">Wikipedia: Cloud computing</a></li>
+                </ul>
+            </div>
+
+            <footer class="research-footer">
+                <a href="index.html#research" class="back-link">← Back to Research</a>
+            </footer>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Minh Pham. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navMenu = document.querySelector('.nav-menu');
+
+        mobileMenu.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
