@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artificial Intelligence - Minh Pham</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="research-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand"><a href="index.html">Minh Pham</a></div>
+            <ul class="nav-menu">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#research">Research</a></li>
+                <li><a href="Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="research-main">
+        <article class="research-article">
+            <header class="research-header">
+                <h1>Artificial Intelligence</h1>
+                <div class="research-meta">
+                    <span class="research-date">2025</span>
+                    <span class="research-category">AI</span>
+                </div>
+            </header>
+
+            <div class="research-content">
+                <h2>How would you define Artificial Intelligence (AI)?</h2>
+                <p>Artificial Intelligence is the field of study and engineering focused on creating machines and software that can perform tasks typically requiring human intelligence, such as perception, reasoning, learning, and decision-making.</p>
+
+                <h2>AI has existed for nearly 70 years. Why is it experiencing an impressive growth right now?</h2>
+                <p>Recent growth is driven by advances in computational power (GPUs and specialized accelerators), access to large datasets, improved algorithms (deep learning), and investment in AI infrastructure and research.</p>
+
+                <h2>Can you identify three domains or classes of problems where current AI models still face significant challenges?</h2>
+                <ul>
+                    <li>Common-sense reasoning and understanding unstructured context</li>
+                    <li>Causal inference and robust decision-making under uncertainty</li>
+                    <li>Generalization to out-of-distribution scenarios and adversarial robustness</li>
+                </ul>
+
+                <h2>Can you name at least three application sectors where robots are widely used, and explain why they are employed in those sectors?</h2>
+                <ul>
+                    <li>Manufacturing: for precision assembly, welding, and high-volume production</li>
+                    <li>Healthcare: for surgical assistance, rehabilitation, and sterilized tasks</li>
+                    <li>Logistics and warehousing: for automated sorting, packing, and inventory management</li>
+                </ul>
+
+                <h2>Do you believe that the convergence of Artificial General Intelligence (AGI) and fully autonomous robotics is imminent and could potentially have a major impact on the world?</h2>
+                <p>While progress in AI and robotics is rapid, true AGI and fully autonomous robotics convergence remains uncertain; widespread impact is likely gradual as technical, ethical, and regulatory challenges are addressed.</p>
+
+                <h2>Read more</h2>
+                <ul>
+                    <li><a href="https://en.wikipedia.org/wiki/Artificial_intelligence">Wikipedia: Artificial intelligence</a></li>
+                    <li><a href="https://www.britannica.com/technology/artificial-intelligence">Britannica: Artificial intelligence</a></li>
+                    <li><a href="https://plato.stanford.edu/entries/artificial-intelligence/">Stanford Encyclopedia: Artificial intelligence</a></li>
+                </ul>
+
+                <h2>References</h2>
+                <ul>
+                    <li>Alan Turing. <em>Computing Machinery and Intelligence</em>. Mind, 1950.</li>
+                    <li>Stuart Russell and Peter Norvig. <em>Artificial Intelligence: A Modern Approach</em>, 4th ed., Pearson, 2020.</li>
+                    <li>Stanford Institute for Human-Centered AI. <em>AI Index Report 2024</em>. https://aiindex.stanford.edu/report</li>
+                </ul>
+            </div>
+
+            <footer class="research-footer">
+                <a href="index.html#research" class="back-link">← Back to Research</a>
+            </footer>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Minh Pham. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navMenu = document.querySelector('.nav-menu');
+
+        mobileMenu.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
