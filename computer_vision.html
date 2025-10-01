@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Vision - Minh Pham</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="research-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand"><a href="index.html">Minh Pham</a></div>
+            <ul class="nav-menu">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#research">Research</a></li>
+                <li><a href="Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="research-main">
+        <article class="research-article">
+            <header class="research-header">
+                <h1>Computer Vision</h1>
+                <div class="research-meta">
+                    <span class="research-date">2025</span>
+                    <span class="research-category">Computer Vision</span>
+                </div>
+            </header>
+
+            <div class="research-content">
+                <h2>Name three applications of Computer Vision you can recognize on your phone</h2>
+                <ul>
+                    <li>Face recognition for unlocking your device</li>
+                    <li>Augmented reality filters (e.g., Snapchat/Instagram lenses)</li>
+                    <li>Text scanning (OCR) in your camera app</li>
+                </ul>
+
+                <h2>Take a photo of your desk and ask ChatGPT to identify or name all the objects</h2>
+                <p>You can upload the image and prompt ChatGPT to list and name each visible object on your desk.</p>
+
+                <h2>How many steps are involved in this identification process?</h2>
+                <p>The process typically involves three steps: image upload, object detection, and object labeling.</p>
+
+                <h2>Can you identify any challenges for ChatGPT</h2>
+                <p>Challenges include overlapping objects, poor lighting, and ambiguous object boundaries affecting detection accuracy.</p>
+
+                <h2>Ask ChatGPT to highlight or circle a specific item on your desk. Describe the results and possible challenges</h2>
+                <p>ChatGPT may return coordinates or a bounding box description but may struggle with precise localization or visual markup without proper visualization support.</p>
+
+                <h2>Several applications involve decision-making processes that rely on Computer Vision.</h2>
+                <p>Examples include autonomous vehicle navigation, identity verification, and quality inspection in manufacturing.</p>
+
+                <h2>Name some applications that you believe are not trustworthy or safe.</h2>
+                <ul>
+                    <li>Unregulated facial surveillance systems</li>
+                    <li>Deepfake detection tools with high false positives</li>
+                    <li>Emotion recognition software claiming to read feelings</li>
+                </ul>
+
+                <h2>Read more</h2>
+                <ul>
+                    <li><a href="https://aws.amazon.com/rekognition/">AWS Rekognition</a></li>
+                    <li><a href="https://azure.microsoft.com/en-us/services/cognitive-services/computer-vision/">Microsoft Azure Computer Vision</a></li>
+                    <li><a href="https://cloud.google.com/vision">Google Cloud Vision</a></li>
+                </ul>
+
+                <h2>References</h2>
+                <ul>
+                    <li><a href="https://en.wikipedia.org/wiki/Computer_vision">Wikipedia: Computer vision</a></li>
+                    <li><a href="https://szeliski.org/Book/">Szeliski: Computer Vision: Algorithms and Applications</a></li>
+                </ul>
+            </div>
+
+            <footer class="research-footer">
+                <a href="index.html#research" class="back-link">← Back to Research</a>
+            </footer>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Minh Pham. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navMenu = document.querySelector('.nav-menu');
+
+        mobileMenu.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
