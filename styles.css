@@ -413,57 +413,147 @@ kbd {
     padding: 1rem;
 }
 
-#canvas {
-    border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-xl);
-    display: block;
+/* Subsection heading (Featured / More projects) */
+.subsection-title {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 4rem 0 2rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
 }
 
-/* Research Section */
-.research-grid {
+.subsection-title:first-of-type {
+    margin-top: 0;
+}
+
+/* Project grid + cards */
+.project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
     gap: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
-.research-card {
+.project-card {
+    display: flex;
+    flex-direction: column;
     background: var(--bg-primary);
-    padding: 2rem;
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-md);
-    transition: all var(--transition-base);
+    overflow: hidden;
     border: 2px solid transparent;
+    transition: all var(--transition-base);
 }
 
-.research-card:hover {
+.project-card:hover {
     transform: translateY(-4px);
     box-shadow: var(--shadow-xl);
     border-color: var(--primary-color);
 }
 
-.research-icon {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+.project-card-media {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    background: var(--bg-tertiary);
 }
 
-.research-card h3 {
-    margin-bottom: 1rem;
+.project-card-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
-.research-card p {
-    margin-bottom: 1.5rem;
+/* App-style media: a row of phone screenshots */
+.project-card-media--app {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 0.75rem;
+    height: 260px;
+    padding: 1.25rem 1rem 0;
+    background: linear-gradient(135deg, #ff0a54 0%, #ff5c8a 100%);
 }
 
-.research-link {
-    color: var(--primary-color);
-    text-decoration: none;
-    font-weight: 500;
-    transition: all var(--transition-base);
+.project-card-media--app img {
+    width: auto;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 0.75rem 0.75rem 0 0;
+    box-shadow: var(--shadow-lg);
 }
 
-.research-link:hover {
-    transform: translateX(4px);
+/* Placeholder media for cards without a cover image */
+.project-card-media--placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    color: #fff;
+}
+
+.project-card-media--placeholder.theme-ice {
+    background: linear-gradient(135deg, #38bdf8 0%, #6366f1 100%);
+}
+
+.project-card-media--placeholder.theme-road {
+    background: linear-gradient(135deg, #f59e0b 0%, #ef4444 100%);
+}
+
+.project-card-body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 1.75rem;
+    text-align: left;
+}
+
+.project-card-body h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.project-card-body p {
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+}
+
+.project-card-tagline {
     display: inline-block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    font-style: italic;
+    color: var(--primary-color);
+    margin-left: 0.5rem;
+}
+
+.project-card .project-tech {
+    margin-top: auto;
+}
+
+.project-card .project-link {
+    margin-top: 0.5rem;
+}
+
+.project-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+}
+
+@media (max-width: 480px) {
+    .project-card-media--app {
+        height: 220px;
+    }
+}
+
+#canvas {
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-xl);
+    display: block;
 }
 
 /* Contact Section */

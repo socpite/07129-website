@@ -16,7 +16,6 @@
             <ul class="nav-menu">
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#research">Research</a></li>
                 <li><a href="Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
                 <li><a href="#calendar">Calendar</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -33,7 +32,7 @@
         <section id="hero" class="hero">
             <div class="hero-content">
                 <h1 class="hero-title">Hello, I'm <span class="gradient-text">Minh Pham</span></h1>
-                <p class="hero-subtitle">Computer Science Student | Software Developer | Researcher</p>
+                <p class="hero-subtitle">Computer Science Student | Software Developer</p>
                 <div class="hero-links">
                     <a href="https://github.com/socpite" class="hero-link" target="_blank" rel="noopener noreferrer">
                         <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
@@ -71,18 +70,20 @@
                 <h2 class="section-title">About Me</h2>
                 <div class="about-content">
                     <p>I'm a passionate computer science student with interests in software development, cybersecurity, and programming languages. I enjoy building projects that challenge me to learn new technologies and solve complex problems.</p>
-                    <p>Currently exploring web development, systems programming with Rust, and conducting research in cybersecurity and programming languages.</p>
+                    <p>Currently exploring web development and systems programming with Rust.</p>
                 </div>
             </div>
         </section>
 
         <section id="projects" class="section projects">
             <div class="container">
-                <h2 class="section-title">Featured Project</h2>
+                <h2 class="section-title">Projects</h2>
+
+                <h3 class="subsection-title">Featured — Play it now</h3>
                 <div class="project-showcase">
                     <div class="project-info">
-                        <h3>Tetris Game</h3>
-                        <p>A Tetris implementation built with Rust + wgpu, compiled to WebAssembly for browser play.</p>
+                        <h3>Tetris</h3>
+                        <p>A Tetris implementation built with Rust + wgpu, compiled to WebAssembly for browser play. Features a spinning board, hidden pieces, and distorted pieces.</p>
                         <div class="project-tech">
                             <span class="tech-tag">Rust</span>
                             <span class="tech-tag">WebAssembly</span>
@@ -110,60 +111,87 @@
                         <canvas id="canvas" width="1200" height="600"></canvas>
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <section id="research" class="section research">
-            <div class="container">
-                <h2 class="section-title">Research & Writing</h2>
-                <div class="research-grid">
-                    <article class="research-card">
-                        <div class="research-icon">🔒</div>
-                        <h3>Cybersecurity Research</h3>
-                        <p>Analysis of recent cybersecurity incidents in Qatar, including the Qatar Living data breach and Indian Cyber Force attacks.</p>
-                        <a href="cybersecurity.html" class="research-link">Read More →</a>
+                <h3 class="subsection-title">More projects</h3>
+                <div class="project-grid">
+                    <article class="project-card">
+                        <div class="project-card-media">
+                            <img src="images/mazegame.png" alt="Mazegame visualizer showing a bot navigating a maze" loading="lazy">
+                        </div>
+                        <div class="project-card-body">
+                            <h3>Mazegame</h3>
+                            <p>A competitive programming game where two players submit C++ code — one to build a maze, one to solve it — and the bots battle it out. Includes a client/server architecture with socket networking, a matchmaking system, and a replay visualizer.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Zig</span>
+                                <span class="tech-tag">C++</span>
+                                <span class="tech-tag">Sockets</span>
+                                <span class="tech-tag">Matchmaking</span>
+                            </div>
+                            <a href="https://github.com/socpite/Mazegame" class="project-link" target="_blank" rel="noopener noreferrer">
+                                View Source Code →
+                            </a>
+                        </div>
                     </article>
-                    <article class="research-card">
-                        <div class="research-icon">💻</div>
-                        <h3>Programming Languages</h3>
-                        <p>Exploration of programming language evolution, design principles, and the reasoning behind language diversity.</p>
-                        <a href="pl.html" class="research-link">Read More →</a>
+
+                    <article class="project-card">
+                        <div class="project-card-media project-card-media--placeholder theme-ice" aria-hidden="true">🌶️</div>
+                        <div class="project-card-body">
+                            <h3>Spicy Adventures</h3>
+                            <p>Journey through the ice kingdom and defeat the ice king using spicy peppers. An action roguelike built in Godot and made for the "Press Start for Tarnival" game jam, playable free in the browser.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Godot</span>
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">Roguelike</span>
+                                <span class="tech-tag">Game Jam</span>
+                            </div>
+                            <a href="https://socpite.itch.io/spicy-adventures" class="project-link" target="_blank" rel="noopener noreferrer">
+                                Play on itch.io →
+                            </a>
+                        </div>
                     </article>
-                    <article class="research-card">
-                        <div class="research-icon">🎯</div>
-                        <h3>Randy Pausch Lecture</h3>
-                        <p>Key insights from Randy Pausch's time management lecture, focusing on productivity and life priorities.</p>
-                        <a href="randy_pausch.html" class="research-link">Read More →</a>
+
+                    <article class="project-card">
+                        <div class="project-card-media project-card-media--placeholder theme-road" aria-hidden="true">🛣️</div>
+                        <div class="project-card-body">
+                            <h3>Roads Royale</h3>
+                            <p>A two-player turn-based strategy game inspired by Civilization and The Battle of Polytopia. Build an economy from farms, mines, and towers, climb an upgrade tree, and command units to claim roads or wipe out the enemy — whoever owns the most roads after 50 turns wins.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Turn-based Strategy</span>
+                                <span class="tech-tag">2-Player</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://www.youtube.com/watch?v=NG3MXF4O6ZM" class="project-link" target="_blank" rel="noopener noreferrer">
+                                    Watch demo →
+                                </a>
+                                <a href="https://hackmd.io/@socpite/H1SFKM9Zbl" class="project-link" target="_blank" rel="noopener noreferrer">
+                                    Read the wiki →
+                                </a>
+                            </div>
+                        </div>
                     </article>
-                    <article class="research-card">
-                        <div class="research-icon">🧮</div>
-                        <h3>Computational Theory</h3>
-                        <p>Foundational concepts of decision problems, P vs NP, and decidability in computation.</p>
-                        <a href="computational_theory.html" class="research-link">Read More →</a>
-                    </article>
-                    <article class="research-card">
-                        <div class="research-icon">🌐</div>
-                        <h3>Cloud Computing</h3>
-                        <p>Overview of cloud computing concepts, service models, and applications.</p>
-                        <a href="cloud_computing.html" class="research-link">Read More →</a>
-                    </article>
-                    <article class="research-card">
-                        <div class="research-icon">📷</div>
-                        <h3>Computer Vision</h3>
-                        <p>Exploration of phone-based vision use cases, processes, and safety considerations.</p>
-                        <a href="computer_vision.html" class="research-link">Read More →</a>
-                    </article>
-                    <article class="research-card">
-                        <div class="research-icon">🤖</div>
-                        <h3>Artificial Intelligence</h3>
-                        <p>Definitions, growth factors, challenges, robotics, and AGI outlook.</p>
-                        <a href="artificial_intelligence.html" class="research-link">Read More →</a>
+
+                    <article class="project-card">
+                        <div class="project-card-media project-card-media--app">
+                            <img src="images/snag-feed.jpeg" alt="snag app feed screen showing campus clothing listings" loading="lazy">
+                            <img src="images/snag-match.jpeg" alt="snag app match details screen with campus meetup map" loading="lazy">
+                            <img src="images/snag-earnings.jpeg" alt="snag app earnings and withdrawals screen" loading="lazy">
+                        </div>
+                        <div class="project-card-body">
+                            <h3>snag <span class="project-card-tagline">Your Campus, Your Fashion</span></h3>
+                            <p>A campus fashion marketplace app. Students swipe through anonymous listings, place bids, and meet up on campus for same-day pickups. Includes smart listing tools, in-app offers and notifications, confirmed meetup spots on a map, and bank-connected earnings withdrawals.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Mobile App</span>
+                                <span class="tech-tag">Marketplace</span>
+                                <span class="tech-tag">Payments</span>
+                            </div>
+                            <a href="https://labsyalla.com/products/snag" class="project-link" target="_blank" rel="noopener noreferrer">
+                                Visit app →
+                            </a>
+                        </div>
                     </article>
                 </div>
             </div>
         </section>
-
-
 
         <section id="student-plan" class="section student-plan">
             <div class="container">
